@@ -19,7 +19,7 @@ ruff = "^0.0.46"
 
 [tool.pyright]
 strict = ["**/*.py"]
-pythonVersion = "^3.10"
+pythonVersion = "3.10"
 
 [build-system]
 requires = ["poetry-core"]
