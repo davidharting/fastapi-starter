@@ -6,6 +6,12 @@ app = typer.Typer()
 
 
 @app.command()
+def dev():
+    command = ["uvicorn", "fastapi_starter.main:app", "--reload"]
+    subprocess.run(command)
+
+
+@app.command()
 def format(fix: bool = False):
     command = ["black", "."]
     if not fix:
