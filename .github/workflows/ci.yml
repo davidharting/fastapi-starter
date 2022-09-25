@@ -5,13 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Install poetry
+        run: pipx install poetry
       - uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version-file: ".python-version"
           cache: "poetry"
+      - name: Install dependencies
+        run: poetry install
       - name: Check formatting
-        run: python tasks.py format
+        run: poetry run python tasks.py format
       - name: Lint
-        run: python tasks.py lint
+        run: poetry run python tasks.py lint
       - name: Typecheck
-        run: python tasks.py typecheck
+        run: poetry run python tasks.py typecheck
