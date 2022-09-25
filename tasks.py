@@ -21,7 +21,8 @@ def format(fix: bool = False):
 
 @app.command()
 def typecheck():
-    print("type check")
+    command = ["pyright"]
+    subprocess.run(command)
 
 
 if __name__ == "__main__":
