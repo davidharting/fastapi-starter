@@ -5,6 +5,7 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
+
 @dataclass
 class HealthResponse:
     status: typing.Literal["ok"] = "ok"

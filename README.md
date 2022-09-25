@@ -6,13 +6,13 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 - [x] Pyenv for Python version management
 - [x] Poetry for dependency management
-- [ ] Invoke for tasks
+- [x] Typer for project tasks
 
 ## Code hygiene
 
-- [ ] Ruff for linting
-- [ ] Black for code formatting
-- [ ] Mypy for type-checking
+- [x] Ruff for linting
+- [x] Black for code formatting
+- [x] Pyright for type-checking
 
 ## Testing
 
@@ -34,4 +34,4 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## CI
 
-- [ ] GitHub actions for lint, type-check, format, test
+- [x] GitHub actions for lint, type-check, format, test
