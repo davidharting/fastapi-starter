@@ -34,4 +34,4 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## CI
 
-- [ ] GitHub actions for lint, type-check, format, test
+- [x] GitHub actions for lint, type-check, format, test
