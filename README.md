@@ -10,9 +10,9 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## Code hygiene
 
-- [ ] Ruff for linting
-- [ ] Black for code formatting
-- [ ] Mypy for type-checking
+- [x] Ruff for linting
+- [x] Black for code formatting
+- [x] Pyright for type-checking
 
 ## Testing
 

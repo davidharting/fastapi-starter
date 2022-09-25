@@ -25,5 +25,15 @@ def typecheck():
     subprocess.run(command)
 
 
+@app.command()
+def lint(fix: bool = False, watch: bool = False):
+    command = ["ruff", "."]
+    if fix:
+        command.append("--fix")
+    if watch:
+        command.append("--watch")
+    subprocess.run(command)
+
+
 if __name__ == "__main__":
     app()
