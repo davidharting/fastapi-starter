@@ -4,34 +4,34 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## Project setup
 
--[x] Pyenv for Python version management
--[x] Poetry for dependency management
--[ ] Invoke for tasks
+- [x] Pyenv for Python version management
+- [x] Poetry for dependency management
+- [ ] Invoke for tasks
 
 ## Code hygiene
 
--[ ] Ruff for linting
--[ ] Black for code formatting
--[ ] Mypy for type-checking
+- [ ] Ruff for linting
+- [ ] Black for code formatting
+- [ ] Mypy for type-checking
 
 ## Testing
 
--[ ] Pytest -[ ] Example API client test
+- [ ] Pytest
+- [ ] Example API client test
 
 ## Logging
 
--[ ] [Loguru](https://github.com/Delgan/loguru) 
--[ ] Middleware to bind a logger per request
-
+- [ ] [Loguru](https://github.com/Delgan/loguru)
+- [ ] Middleware to bind a logger per request
 
 ## FastAPI
--[x] Multi-file / multi-router setup
--[x] Health check endpoint
--[ ] Docs generation
--[ ] Client generation
--[ ] Abstraction for consistent background jobs
 
+- [x] Multi-file / multi-router setup
+- [x] Health check endpoint
+- [ ] Docs generation
+- [ ] Client generation
+- [ ] Abstraction for consistent background jobs
 
 ## CI
--[ ] GitHub actions for lint, type-check, format, test
 
+- [ ] GitHub actions for lint, type-check, format, test
