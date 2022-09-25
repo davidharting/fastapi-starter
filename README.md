@@ -6,7 +6,7 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 - [x] Pyenv for Python version management
 - [x] Poetry for dependency management
-- [ ] Typer for project tasks
+- [x] Typer for project tasks
 
 ## Code hygiene
 
