@@ -1,9 +1,22 @@
-from invoke import task
+import subprocess
+import typer
 
 
-@task(help={"fix": "Fix problems found in files."})
-def format(c, fix=False):
-    if fix:
-        c.run("black .")
-    else:
-        c.run("black . --check")
+app = typer.Typer()
+
+
+@app.command()
+def format(fix: bool = False):
+    command = ["black", "."]
+    if not fix:
+        command.append("--check")
+    subprocess.run(command)
+
+
+@app.command()
+def typecheck():
+    print("type check")
+
+
+if __name__ == "__main__":
+    app()
