@@ -33,6 +33,9 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 - [ ] Client generation
 - [ ] Abstraction for consistent background jobs
 
+## Config
+- [ ] Use Pydant `BaseSetting` subclass to read and parse environment variables (e.g., LOG_LEVEL)
+
 ## CI
 
 - [x] GitHub actions for lint, type-check, format, test
