@@ -13,6 +13,7 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 - [x] Ruff for linting
 - [x] Black for code formatting
 - [x] Pyright for type-checking
+- [ ] isort for import sorting
 
 ## Testing
 
