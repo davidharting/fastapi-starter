@@ -1,5 +1,5 @@
-from dataclasses import dataclass
 import typing
+from dataclasses import dataclass
 
 from fastapi import APIRouter
 
