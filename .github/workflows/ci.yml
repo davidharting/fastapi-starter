@@ -16,7 +16,7 @@ jobs:
       - name: Check formatting
         run: poetry run python tasks.py format
       - name: Check if imports are sorted
-        run: poetry run python tasks.py sort_imports
+        run: poetry run python tasks.py sort-imports
       - name: Lint
         run: poetry run python tasks.py lint
       - name: Typecheck
