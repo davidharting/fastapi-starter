@@ -1,6 +1,6 @@
 import subprocess
-import typer
 
+import typer
 
 app = typer.Typer()
 
@@ -32,6 +32,17 @@ def lint(fix: bool = False, watch: bool = False):
         command.append("--fix")
     if watch:
         command.append("--watch")
+    subprocess.run(command)
+
+
+@app.command()
+def sort_imports(fix: bool = False):
+    """
+    Check if imports are sorted. Optionally, automatically fix problems.
+    """
+    command = ["isort", ".", "--atomic"]
+    if not fix:
+        command.append("-c")
     subprocess.run(command)
 
 
