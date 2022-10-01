@@ -35,7 +35,7 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## Config
 
-- [ ] Use Pydant `BaseSetting` subclass to read and parse environment variables (e.g., LOG_LEVEL)
+- [x] Use Pydant `BaseSetting` subclass to read and parse environment variables (e.g., LOG_LEVEL)
 
 ## CI
 
