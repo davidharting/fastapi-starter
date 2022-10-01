@@ -22,7 +22,7 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## Logging
 
-- [ ] [Loguru](https://github.com/Delgan/loguru)
+- [x] [Loguru](https://github.com/Delgan/loguru)
 - [ ] Middleware to bind a logger per request
 
 ## FastAPI
