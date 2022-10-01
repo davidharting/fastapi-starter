@@ -29,8 +29,6 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 - [x] Multi-file / multi-router setup
 - [x] Health check endpoint
-- [ ] Docs generation
-- [ ] Client generation
 - [ ] Abstraction for consistent background jobs
 
 ## Config
