@@ -2,6 +2,8 @@ import sys
 
 from loguru import logger
 
-# TODO: JSON logging in production only - or configured via .env that is
+from config import LogConfig
 
-logger.add(sys.stdout, serialize=True)
+logger.remove(0)
+
+logger.add(sys.stdout, serialize=LogConfig.structured, level=LogConfig.level)
