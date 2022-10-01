@@ -17,8 +17,8 @@ My goal is to provide myself with a starter repo so that I can quickly build new
 
 ## Testing
 
-- [ ] Pytest
-- [ ] Example API client test
+- [x] Pytest
+- [x] Example API client test
 
 ## Logging
 
