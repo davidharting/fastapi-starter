@@ -67,7 +67,7 @@ Now, see what commands are availabile to you.
 python tasks.py --help
 ```
 
-To star the dev server.
+To start the dev server:
 
 ```bash
 python tasks.py dev
