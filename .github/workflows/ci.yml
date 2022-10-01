@@ -21,3 +21,5 @@ jobs:
         run: poetry run python tasks.py lint
       - name: Typecheck
         run: poetry run python tasks.py typecheck
+      - name: Test
+        run: poetry run python tasks.py test
