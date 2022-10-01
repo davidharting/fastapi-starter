@@ -73,6 +73,10 @@ To star the dev server.
 python tasks.py dev
 ```
 
+## Set up VS Code
+
+This project comes with a `.vscode` folder which will recommend extensions to install and automatically configure. Simply install the recommended extensions when prompted!
+
 ## ✅ Features
 
 ### Project setup
