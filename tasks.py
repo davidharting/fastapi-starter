@@ -1,8 +1,15 @@
 import subprocess
+import typing
 
 import typer
 
 app = typer.Typer()
+
+
+def run_command(command: typing.List[str]) -> None:
+    result = subprocess.run(command)
+    if result.returncode > 0:
+        raise typer.Exit(result.returncode)
 
 
 @app.command()
@@ -11,7 +18,7 @@ def dev():
     Run the FastAPI server in development mode with hot code reloading.
     """
     command = ["uvicorn", "fastapi_starter.main:app", "--reload"]
-    subprocess.run(command)
+    run_command(command)
 
 
 @app.command()
@@ -22,7 +29,7 @@ def format(fix: bool = False):
     command = ["black", "."]
     if not fix:
         command.append("--check")
-    subprocess.run(command)
+    run_command(command)
 
 
 @app.command()
@@ -31,7 +38,7 @@ def typecheck():
     Check Python files for type errors using Pyright.
     """
     command = ["pyright"]
-    subprocess.run(command)
+    run_command(command)
 
 
 @app.command()
@@ -44,7 +51,7 @@ def lint(fix: bool = False, watch: bool = False):
         command.append("--fix")
     if watch:
         command.append("--watch")
-    subprocess.run(command)
+    run_command(command)
 
 
 @app.command()
@@ -55,7 +62,7 @@ def sort_imports(fix: bool = False):
     command = ["isort", ".", "--atomic"]
     if not fix:
         command.append("-c")
-    subprocess.run(command)
+    run_command(command)
 
 
 @app.command()
@@ -64,7 +71,7 @@ def test():
     Run tests using Pytest.
     """
     command = ["pytest"]
-    subprocess.run(command)
+    run_command(command)
 
 
 if __name__ == "__main__":
