@@ -28,6 +28,12 @@ pythonVersion = "3.10"
 [tool.isort]
 profile = "black"
 
+[tool.ruff]
+ignore = [
+  "E501" # Rely on Black for line length enforcement
+]
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
